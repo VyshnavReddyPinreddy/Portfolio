@@ -1,0 +1,258 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 0;
+}
+
+.home {
+  background-color: #cbf1f5;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 100px 100px 1fr 1fr;
+  padding-left: 60px;
+  padding-bottom: 110px;
+}
+.home p {
+  color: #2d2d2d;
+}
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: 5fr repeat(5, 1fr);
+  grid-template-rows: 100px;
+  background-color: #71c9ce;
+  gap: 5px;
+  height: 30px;
+}
+.navbar p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar p:hover {
+    background-color: #ff9149;
+    color: white;
+    border-radius: 8px;
+    padding: 2px 8px; 
+    transition: all 0.3s ease;
+    display: inline; 
+}
+  
+.navbar a , .icons a{
+  text-decoration: none;
+  color: inherit;
+}
+.intro p {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.home-section {
+  grid-area: 1/2/-1/3;
+}
+.about-section {
+  grid-area: 1/3/-1/4;
+}
+.Projects-section {
+  grid-area: 1/4/-1/5;
+}
+.Resume-section {
+  grid-area: 1/5/-1/6;
+}
+.Contact-section {
+  grid-area: 1/6/-1/-1;
+}
+.greetings {
+  padding-top: 20px;
+  grid-area: 1/1/2/2;
+}
+.greetings > p {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.name {
+  grid-area: 2/1/3/2;
+}
+.name > p {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.job {
+  grid-area: 3/1/4/2;
+}
+.job > p {
+  font-size: 35px;
+  font-weight: lighter;
+}
+.intro {
+  grid-area: 4/1/-1/2;
+}
+.profile-pic {
+  grid-area: 2/2/-1/-1;
+  padding-left: 30px;
+}
+.profile-pic > img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid black;
+}
+.Projects {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr 1fr 40px;
+  grid-template-rows: 400px;
+  gap: 15px;
+  background-color: #cbf1f5;
+  padding-top: 40px;
+  padding-bottom: 85px;
+}
+.project {
+  background-color: #FFECDB;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-info {
+  text-align: center;
+}
+.project-title,
+.About-Me , .resume-title , .contact-title{
+  margin: 0;
+  padding-left: 60px;
+  font-size: 40px;
+  background-color: #71c9ce;
+}
+.About-Me , .resume-title, .contact-title{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.p1 img {
+  width: 200px;
+  height: 300px;
+}
+.p2 img {
+  width: 300px;
+  height: auto;
+}
+.p3 img {
+  width: 300px;
+  height: 300px;
+}
+.p1 {
+  grid-area: 1/2/-1/3;
+}
+.p2 {
+  grid-area: 1/3/-1/4;
+}
+.p3 {
+  grid-area: 1/4/-1/5;
+}
+.project-title p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #cbf1f5;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  height: 30vh;
+  background-color: #ffecdb;
+  margin-left: 60px;
+  margin-right: 60px;
+  border: 5px solid #ff9149;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.a3 {
+  margin-bottom: 60px;
+}
+.Resume{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color:#cbf1f5;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Education,.Technical-Skills{
+    background-color: #ffecdb;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 5px solid #ff9149;
+}
+.Education{
+    grid-area: 1/1/2/2;
+}
+.Technical-Skills{
+    grid-area: 2/1/-1/2;
+}
+.nitw-image{
+    grid-area: 1/2/-1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nitw-image img{
+    border-radius: 30px;
+    border: 5px solid #ff9149;
+}
+.icons img{
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+}
+.Contact{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+    background-color: #cbf1f5;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.linkedin,.github,.instagram{
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.icons img{
+    border: 3px solid #ff9149;
+}
+
