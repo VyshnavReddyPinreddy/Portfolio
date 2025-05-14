@@ -347,6 +347,20 @@ p {
 
 }
 
+@media (max-width:700px){
+  .Projects{
+    padding-left:20%;
+    padding-right: 20%;
+  }
+}
+
+@media (max-width:600px){
+  .Projects{
+    padding-left:16%;
+    padding-right: 16%;
+  }
+}
+
 @media (max-width:519px){
   html,body{
     font-family: 'Open Sans', sans-serif;
@@ -402,6 +416,11 @@ p {
     padding-top: 1%;
     font-size: 25px;
     font-weight: lighter;
+  }
+
+  .Projects{
+    padding-left:14%;
+    padding-right: 14%;
   }
 
 }
