@@ -13,8 +13,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 p {
   margin: 0;
   padding: 0;
@@ -332,16 +330,16 @@ p {
   }
 
   .intro p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .greetings > p , .name > p {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bolder;
   }
 
   .job > p {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: lighter;
   }
 
