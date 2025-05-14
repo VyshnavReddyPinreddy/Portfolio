@@ -313,7 +313,7 @@ p {
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    height: 10vh;
+    height: 8vh;
   }
 
   .home{
@@ -322,7 +322,7 @@ p {
   }
 
   .greetings , .intro{
-    padding-top: 8%;
+    padding-top: 12%;
   }
 
   .profile-pic {
