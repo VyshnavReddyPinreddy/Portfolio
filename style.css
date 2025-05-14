@@ -304,6 +304,9 @@ p {
 }
 
 @media (max-width:519px){
+  html,body{
+    font-family: 'Open Sans', sans-serif;
+  }
   .navbar{
     justify-content: space-around;
     gap: 10px;
@@ -339,6 +342,7 @@ p {
   }
 
   .job > p {
+    padding-top: 1%;
     font-size: 25px;
     font-weight: lighter;
   }
