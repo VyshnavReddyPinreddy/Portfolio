@@ -311,7 +311,7 @@ p {
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    height: 60px;
+    height: 10vh;
   }
 
   .home{
