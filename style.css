@@ -330,16 +330,16 @@ p {
   }
 
   .intro p {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .greetings > p , .name > p {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bolder;
   }
 
   .job > p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: lighter;
   }
 
