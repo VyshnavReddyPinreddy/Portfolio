@@ -321,8 +321,12 @@ p {
     flex-direction: column;
   }
 
-  .greetings , .intro{
-    padding-top: 14%;
+  .greetings{
+    padding-top: 12%;
+  }
+
+  .intro{
+    padding-top: 8%;
   }
 
   .profile-pic {
