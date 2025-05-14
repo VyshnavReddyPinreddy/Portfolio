@@ -134,17 +134,17 @@ p {
 .project-info {
   text-align: center;
 }
-.project-title,
-.About-Me , .resume-title , .contact-title{
-  margin: 0;
-  padding-left: 60px;
-  font-size: 40px;
+
+.About-Me, .resume-title, .contact-title ,.project-title{
+  display: flex;
+  width: 100vw;
   background-color: #71c9ce;
+  padding: 0.1%;
+  font-size: 40px;
+  padding-left: 5%;
 }
-.About-Me , .resume-title, .contact-title{
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
+
+
 .p1 img {
   width: 200px;
   height: 300px;
@@ -185,15 +185,17 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
-  height: 30vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
   background-color: #ffecdb;
-  margin-left: 60px;
-  margin-right: 60px;
   border: 5px solid #ff9149;
-  border-radius: 10px;
+  border-radius: 2%;
   font-size: 20px;
+  text-align: center;
+  padding: 3%;
 }
+
 .a3 {
   margin-bottom: 60px;
 }
@@ -345,7 +347,7 @@ p {
     align-self: flex-start;
   }
 
-  .intro p {
+  .intro p , .about p{
     font-size: 15px;
   }
 
