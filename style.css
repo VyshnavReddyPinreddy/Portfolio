@@ -309,7 +309,9 @@ p {
   }
   .navbar{
     justify-content: space-around;
+    align-items: center;
     gap: 10px;
+    height: 50px;
   }
 
   .home{
@@ -318,7 +320,7 @@ p {
   }
 
   .greetings , .intro{
-    padding-top: 4%;
+    padding-top: 8%;
   }
 
   .profile-pic {
