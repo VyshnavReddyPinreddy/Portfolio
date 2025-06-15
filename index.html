@@ -10,9 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="icon" type="image/png" href="./images/logo.png" />
   </head>
   <body>
     <div class="navbar" id="navbarsection">
@@ -46,14 +49,15 @@
         </p>
       </div>
       <div class="profile-pic">
-        <img
-          src="./images/mypic3.jpg"
-        />
+        <img src="./images/mypic3.jpg" />
       </div>
     </div>
     <div class="About-Me" id="aboutmepage"><p>About</p></div>
-    <div class="About">
-      <div class="about a1">
+    <div class="About card-div">
+      <button id="leftBtn" class="arrow-btn leftBtn">
+        <span>&#8592;</span>
+      </button>
+      <div class="about a1 card active" data-index="1">
         <p>
           Hi! I'm a Computer Science undergrad at
           <strong>NIT Warangal</strong> (Batch 2023–27) with a strong passion
@@ -63,7 +67,7 @@
           a smart algorithm.
         </p>
       </div>
-      <div class="about a2">
+      <div class="about a2 card" data-index="2">
         <p>
           With a solid foundation in
           <strong>Data Structures & Algorithms</strong>,<strong>
@@ -75,108 +79,180 @@
           something new.
         </p>
       </div>
-      <div class="about a3">
+      <div class="about a3 card" data-index="3">
         <p>
           Outside of tech, I love watching and playing cricket — it's my go-to
           way to unwind and stay active. Whether it's coding or cricket, I enjoy
           the thrill of strategy and execution.
         </p>
       </div>
+      <button id="rightBtn" class="arrow-btn rightBtn">
+        <span>&#8594;</span>
+      </button>
     </div>
-    <div class="project-title" id="projectspage"><p style="padding: 0;">Projects</p></div>
-    <div class="Projects">
-      <div class="project p1">
-        <div class="project-pic"><img src="./images/iphone.png" /></div>
-        <div class="project-info">
-          <p>
-            A tinder website for dogs where they can find their perfect partner.
-            Using <strong>bootstrap CSS</strong>.
-          </p>
-        </div>
-        <div>
-          <a
-            href="https://vyshnavreddypinreddy.github.io/TinDog/"
-            target="_blank"
-            >Link</a
-          >
-        </div>
-      </div>
-      <div class="project p2">
-        <img class="project-pic" src="./images/dbms.png" />
-        <hr/>
-        <div class="project-info">
-          <p>
-            A database system to help ASHA workers manage village healthcare, family data, and maternal records efficiently.
-          </p>
-        </div>
-        <div>
-          <a
-            href="https://github.com/VyshnavReddyPinreddy/DBMS_PROJECT/blob/main/DBMS_PROJECT_FINAL_PDF_2.pdf"
-            target="_blank"
-            >Link</a
-          >
-        </div>
-      </div>
-      <div class="project p3">
-        <img class="project-pic" src="./images/simongame.png" />
-        <hr/>
-        <div class="project-info">
-          <p>A fun little Simon Game built with HTML, CSS, and JavaScript (with jQuery)</p>
-        </div>
-        
-        <div>
-          <a
-            href="https://vyshnavreddypinreddy.github.io/Simon_Game/"
-            target="_blank"
-            >Link</a
-          >
-        </div>
-      </div>
+    <div class="project-title" id="projectspage">
+      <p style="padding: 0">Projects</p>
     </div>
+
+    <section id="projects-section">
+      <div class="project-card-wrapper">
+        <button class="arrow-btn left">&#8592;</button>
+
+        <div class="project-card-container">
+          <div class="project-card active">
+            <img class="project-pic" src="./images/simongame.png" />
+            <div class="project-info">
+              <p>
+                How good is your memory? 🟢🔴🟡🔵 Play this addictively fun
+                Simon Game made with HTML, CSS & jQuery. One click, and you're
+                hooked!
+              </p>
+            </div>
+            <a
+              href="https://vyshnavreddypinreddy.github.io/Simon_Game/"
+              target="_blank"
+              >Link</a
+            >
+          </div>
+
+          <div class="project-card">
+            <img class="project-pic" src="./images/dbms.png" />
+            <div class="project-info">
+              <p>
+                Empowering rural healthcare—this smart DBMS helps ASHA workers
+                seamlessly track village health records, maternal care, births,
+                deaths, and more. Explore how tech meets community care!
+              </p>
+            </div>
+            <a
+              href="https://github.com/VyshnavReddyPinreddy/DBMS_PROJECT/blob/main/DBMS_PROJECT_FINAL.pdf"
+              target="_blank"
+              >Link</a
+            >
+          </div>
+
+          <div class="project-card">
+            <img class="project-pic" src="./images/iphone.png" />
+            <div class="project-info">
+              <p>
+                A fun frontend-only project that uses various Bootstrap
+                components to recreate a Tinder-like experience—for dogs! Clean
+                UI, responsive design, and paws-itively adorable.
+              </p>
+            </div>
+            <a
+              href="https://vyshnavreddypinreddy.github.io/TinDog/"
+              target="_blank"
+              >Link</a
+            >
+          </div>
+        </div>
+
+        <button class="arrow-btn right">&#8594;</button>
+      </div>
+    </section>
+
     <div class="resume-title" id="resumepage"><p>Resume</p></div>
     <div class="Resume">
-      <div class="Education">
-        <h3>Education</h3>
-        <ul>
-          <li>
-            <strong>National Institute of Technology, Warangal</strong> — B.Tech
-            in CSE (2023–2027) <br />CGPA: 8.32/10
-          </li>
-          <li>
-            <strong>Sri Chaitanya Jr Kalasala, Madhapur</strong> — Intermediate
-            (2021–2023) <br />Marks: 990/1000
-          </li>
-          <li>
-            <strong>KKR Gowtham Concept School, Kushaiguda</strong> — SSC (2021)
-            <br />CGPA: 10/10
-          </li>
-        </ul>
+      <div class="timeline">
+        <button class="line-button" data-year="2027">2027</button>
+        <div class="v-line"></div>
+        <button class="line-button" data-year="2023">2023</button>
+        <div class="v-line"></div>
+        <button class="line-button" data-year="2021">2021</button>
       </div>
+
+      <div class="Education">
+        <h2>Education</h2>
+        <div class="edu year-2027 active">
+          <div class="InstituteName">
+            National Institute of Technology, Warangal
+          </div>
+          <div class="Course">B.Tech in CSE (2023–Present)</div>
+          <div class="Marks">CGPA: 8.38/10</div>
+        </div>
+        <div class="edu year-2023">
+          <div class="InstituteName">Sri Chaitanya Jr Kalasala, Madhapur</div>
+          <div class="Course">Intermediate MPC (2021–2023)</div>
+          <div class="Marks">Marks: 990/1000</div>
+        </div>
+        <div class="edu year-2021">
+          <div class="InstituteName">
+            KKR Gowtham Concept School, Kushaiguda
+          </div>
+          <div class="Course">SSC (2021)</div>
+          <div class="Marks">CGPA: 10/10</div>
+        </div>
+      </div>
+
       <div class="Technical-Skills">
-        <h3>Technical Skills & Interests</h3>
+        <h2>Technical Skills & Interests</h2>
         <ul>
-          <li><strong>Languages:</strong> C++ </li>
+          <li><strong>Languages:</strong> C++</li>
           <li><strong>Developer Tools:</strong> GitHub, VS Code</li>
           <li><strong>Frameworks:</strong> Bootstrap</li>
-          <li><strong>Soft Skills:</strong> Problem-solving, Teamwork, Communication</li>
-          <li><strong>Coursework:</strong> DSA, OOPs, DBMS</li>
-          <li><strong>Area of Interest:</strong> Front End Web Development</li>
+          <li>
+            <strong>Soft Skills:</strong> Problem-solving, Teamwork,
+            Communication
+          </li>
+          <li><strong>Coursework:</strong> DSA, OOP, DBMS</li>
+          <li><strong>Area of Interest:</strong> Full-Stack Web Development</li>
         </ul>
-      </div>
-      <div class="nitw-image">
-        <img src="./images/nitw.jpg"/>
       </div>
     </div>
     <div class="contact-title" id="contactmepage"><p>Contact Me</p></div>
     <div class="Contact">
+      <div class="message">
+        <h1>Let’s Connect!</h1>
+        <p>
+          I’d love to hear from you — whether it's about a project,
+          collaboration, or just to say hi!
+        </p>
+      </div>
+      <div class="icons">
+        <div class="linkedin">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/pinreddy-vyshnav-reddy-084277310/"
+            ><img src="./images/linkedin.png"
+          /></a>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/pinreddy-vyshnav-reddy-084277310/"
+              ><p>Linkedin</p></a
+            >
+          </div>
+        </div>
+        <div class="github">
+          <a target="_blank" href="https://github.com/VyshnavReddyPinreddy"
+            ><img src="./images/github.png"
+          /></a>
+          <div>
+            <a target="_blank" href="https://github.com/VyshnavReddyPinreddy"
+              ><p>GitHub</p></a
+            >
+          </div>
+        </div>
+        <div class="instagram">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/vyshnavreddy_pinreddy/"
+            ><img src="./images/instagram.jpeg"
+          /></a>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/vyshnavreddy_pinreddy/"
+              ><p>Instagram</p></a
+            >
+          </div>
+        </div>
+      </div>
       <div class="rights">
         <p>© Vyshnav Reddy</p>
       </div>
-      <div class="icons">
-        <div class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/pinreddy-vyshnav-reddy-084277310/"><img src="./images/linkedin.png"/></a><div><a target="_blank" href="https://www.linkedin.com/in/pinreddy-vyshnav-reddy-084277310/"><p>Linkedin</p></a></div></div>
-        <div class="github"><a target="_blank" href="https://github.com/VyshnavReddyPinreddy"><img src="./images/github.png"/></a><div><a target="_blank" href="https://github.com/VyshnavReddyPinreddy"><p>GitHub</p></a></div></div>
-        <div class="instagram"><a target="_blank" href="https://www.instagram.com/vyshnavreddy_pinreddy/"><img src="./images/instagram.jpeg"/></a><div><a target="_blank" href="https://www.instagram.com/vyshnavreddy_pinreddy/"><p>Instagram</p></a></div></div>
-      </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
