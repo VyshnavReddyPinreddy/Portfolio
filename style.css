@@ -578,6 +578,9 @@ p {
     height: 70vh;
     gap: 0;
   }
+  .project-card-wrapper{
+    height: 70vh;
+  }
   .Resume {
     display: flex;
     flex-direction: column;
