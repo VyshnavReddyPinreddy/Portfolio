@@ -3,10 +3,8 @@ const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > lastScrollY) {
-    // Scrolling down → show navbar
     navbar.classList.add("hidden");
   } else {
-    // Scrolling up → hide navbar
     navbar.classList.remove("hidden");
   }
   lastScrollY = window.scrollY;
@@ -65,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
     showCard(currentIndex);
   });
 
-  // Initial state
   showCard(currentIndex);
 });
 
@@ -75,18 +72,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const eduBlocks = document.querySelectorAll(".edu");
 
   function showEducation(year) {
-    // Remove active class from all blocks
     eduBlocks.forEach((block) => {
       block.classList.remove("active");
     });
 
-    // Add active class to the selected year block
     const target = document.querySelector(`.edu.year-${year}`);
     if (target) {
       target.classList.add("active");
     }
 
-    // Toggle active state on buttons
     buttons.forEach((btn) => {
       if (btn.getAttribute("data-year") === year) {
         btn.classList.add("active");
@@ -96,10 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Default active state
   showEducation("2027");
 
-  // Set event listeners on buttons
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const year = button.getAttribute("data-year");
@@ -108,10 +100,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Dark Mode Toggle
 const darkModeToggle = document.getElementById("darkModeToggle");
 
 darkModeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    darkModeToggle.textContent = "☀️";
+  } else {
+    darkModeToggle.textContent = "🌙";
+  }
 });
 

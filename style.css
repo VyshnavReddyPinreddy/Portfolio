@@ -37,7 +37,7 @@ p {
 }
 
 .navbar.hidden {
-  top: -100px; /* Hide nav by moving it off-screen */
+  top: -100px; 
 }
 
 .navbar p {
@@ -165,7 +165,7 @@ p {
 
 .project-card-container {
   width: 550px;
-  height: 550px; /* Fix the height for uniformity */
+  height: 550px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,7 +182,7 @@ p {
   box-shadow: 10px 10px 20px rgba(26, 219, 254, 0.3);
   color: #2d2d2d;
   width: 100%;
-  height: 100%; /* Same height for all cards */
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -193,7 +193,7 @@ p {
 .project-pic {
   width: 100%;
   height: 300px;
-  object-fit: contain; /* or use "cover" if you want to fill fully */
+  object-fit: contain;
   border-radius: 1rem;
 }
 
@@ -241,7 +241,6 @@ p {
   font-size: 1.5rem;
   line-height: 2.2rem;
   padding: 4rem 4rem;
-  /* height: 100%; */
   width: 100%;
   box-shadow: 10px 10px 20px rgba(26, 219, 254, 0.3);
   transition: transform 0.4s ease, opacity 0.4s ease;
@@ -264,7 +263,7 @@ p {
   background: linear-gradient(135deg, #d4a5ff, #fbc2eb);
   border: none;
   border-radius: 50%;
-  color: #4a0072; /* deep purple for contrast */
+  color: #4a0072; 
   font-size: 1.8rem;
   width: 55px;
   height: 55px;
@@ -719,7 +718,6 @@ p {
 }
 
 
-/* DARK MODE STYLES */
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
