@@ -59,6 +59,19 @@ p {
   color: inherit;
 }
 
+.dark-mode-button {
+  background-color: #02F0FE;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-button:hover {
+  background-color: #ffffff;
+  border-radius: 8px;
+  transform: scale(1.2);
+}
+
 .home {
   background-color: #f2f9ff;
   display: grid;
@@ -371,10 +384,10 @@ p {
 .icons img {
   height: 40px;
   width: 40px;
-  border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 122, 204, 0.7);
-
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 122, 204, 0.7);
 }
+
 .Contact {
   padding: 40px;
   display: grid;
@@ -422,9 +435,7 @@ p {
   transform: scale(1.2);
   transition: transform 0.3s ease;
 }
-.project-pic {
-  border-radius: 5%;
-}
+
 
 @media (max-width: 1050px) {
   .Resume{
@@ -705,4 +716,127 @@ p {
   .p3 {
     margin-bottom: 15%;
   }
+}
+
+
+/* DARK MODE STYLES */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .navbar p:hover {
+  background-color: white;
+  color: #4C02E0;
+}
+
+body.dark-mode .dark-mode-button:hover {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode .dark-mode-button {
+  background-color: #4C02E0;
+  color: #ffffff;
+}
+
+body.dark-mode .home,
+body.dark-mode #projects-section,
+body.dark-mode .About,
+body.dark-mode .Resume,
+body.dark-mode .Contact {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .home p,
+body.dark-mode .intro p,
+body.dark-mode .greetings > p,
+body.dark-mode .name > p,
+body.dark-mode .job > p,
+body.dark-mode .message {
+  color: #e0e0e0;
+}
+
+body.dark-mode .project-card-wrapper,
+body.dark-mode .project-card-container {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .project-card {
+  background: linear-gradient(to bottom right, #333, #444);
+  color: #f0f0f0;
+  box-shadow: 10px 10px 20px rgba(26, 219, 254, 0.3);
+}
+
+body.dark-mode .project-card a {
+  color: #89cff0;
+}
+
+body.dark-mode .about {
+  background: linear-gradient(to bottom right, #2c2c2c, #3a3a3a);
+  color: #f0f0f0;
+}
+
+body.dark-mode .about strong {
+  color: #ff9800;
+}
+
+body.dark-mode .arrow-btn {
+  background: linear-gradient(135deg, #444, #666);
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .arrow-btn:hover {
+  background: linear-gradient(135deg, #555, #777);
+}
+
+body.dark-mode .Education,
+body.dark-mode .Technical-Skills {
+  background: linear-gradient(135deg, #2f2f2f, #4a4a4a);
+  color: #f0f0f0;
+}
+
+body.dark-mode .line-button {
+  background-color: #2a2a2a;
+  color: #ccc;
+  border-color: #555;
+}
+
+body.dark-mode .line-button:hover {
+  background-color: #555;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+body.dark-mode .line-button.active {
+  background-color: #888;
+  color: #ffffff;
+}
+
+body.dark-mode .v-line {
+  background: linear-gradient(to right, #999, #aaa);
+}
+
+body.dark-mode .project-title,
+body.dark-mode .resume-title,
+body.dark-mode .contact-title,
+body.dark-mode .About-Me {
+background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  color: #ffffff;
+}
+
+body.dark-mode .icons img {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+body.dark-mode .navbar a,
+body.dark-mode .icons a {
+  color: inherit;
 }
