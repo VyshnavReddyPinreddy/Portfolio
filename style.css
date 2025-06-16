@@ -141,9 +141,9 @@ p {
 
 .project-card-wrapper {
   display: flex;
+  height: auto;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   gap: 2rem;
   position: relative;
 }
@@ -282,7 +282,7 @@ p {
   background-color: #ffffff;
   gap: 40px;
   padding: 5%;
-  height: 90vh;
+  height: auto;
 }
 
 .timeline {
@@ -363,7 +363,7 @@ p {
 }
 .Technical-Skills {
   grid-area: 1/3/-1/-1;
-  font-size: larger;
+  font-size: large;
 }
 
 .icons img {
@@ -423,18 +423,8 @@ p {
 }
 
 @media (max-width: 1050px) {
-  .nitw-image img {
-    width: 450px;
-    height: auto;
-  }
-  .nitw-image {
-    grid-area: 1/3/2/-1;
-  }
-  .Technical-Skills {
-    grid-area: 2/2/-1/4;
-  }
-  .project-pic {
-    border-radius: 5%;
+  .Resume{
+    font-size: medium;
   }
   .Projects {
     display: grid;
@@ -454,10 +444,20 @@ p {
 }
 
 
-@media (max-width: 854px) {
+@media (max-width: 856px) {
   .Resume {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .timeline{
+    grid-area: 1/1/2/2;
+  }
+  .Education{
+    grid-area: 1/2/2/-1;
+  }
+  .Technical-Skills{
+    grid-area: 2/1/-1/-1;
   }
   .project-pic {
     border-radius: 5%;
@@ -496,8 +496,6 @@ p {
 
   .profile-pic > img {
     width: 90%;
-    border-radius: 10px;
-    border: 4px solid black;
     align-self: flex-start;
   }
 
@@ -561,12 +559,20 @@ p {
 
 @media (max-width: 700px) {
   .Resume {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
   }
-  .project-pic {
-    border-radius: 5%;
+  .timeline{
+    grid-area: 1/1/2/2;
   }
+  .Education{
+    grid-area: 1/2/2/-1;
+  }
+  .Technical-Skills{
+    grid-area: 2/1/-1/-1;
+  }
+
   .Projects {
     padding-left: 20%;
     padding-right: 20%;
@@ -578,15 +584,19 @@ p {
     height: 70vh;
     gap: 0;
   }
-  .project-card-wrapper{
-    height: 70vh;
+   .Resume {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
   }
-  .Resume {
-    display: flex;
-    flex-direction: column;
+  .timeline{
+    grid-area: 1/1/2/2;
   }
-  .project-pic {
-    border-radius: 5%;
+  .Education{
+    grid-area: 1/2/2/-1;
+  }
+  .Technical-Skills{
+    grid-area: 2/1/-1/-1;
   }
   .Projects {
     padding-left: 16%;
@@ -612,11 +622,18 @@ p {
     font-size: 0.5rem;
   }
   .Resume {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
   }
-  .project-pic {
-    border-radius: 5%;
+  .timeline{
+    grid-area: 1/1/2/2;
+  }
+  .Education{
+    grid-area: 1/2/2/-1;
+  }
+  .Technical-Skills{
+    grid-area: 2/1/-1/-1;
   }
   html,
   body {
@@ -656,7 +673,6 @@ p {
   .profile-pic > img {
     width: 90%;
     border-radius: 10px;
-    border: 4px solid black;
     align-self: flex-start;
   }
 
