@@ -526,6 +526,9 @@ p {
 }
 
 @media (max-width: 836px){
+  .About{
+    padding: 0%;
+  }
   .about{
     font-size: 1.2rem;
   }
@@ -571,6 +574,10 @@ p {
 }
 
 @media (max-width: 600px) {
+  .About{
+    height: 70vh;
+    gap: 0;
+  }
   .Resume {
     display: flex;
     flex-direction: column;
@@ -584,6 +591,9 @@ p {
   }
 }
 @media (max-width: 519px) {
+  .project-card-wrapper{
+    gap: 5px;
+  }
   .about{
     font-size: 15px;
   }
