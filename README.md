@@ -11,7 +11,7 @@ A responsive personal portfolio website built from scratch without using any ext
 ## Technologies Used
 - HTML
 - CSS
-- JavaScript (DOM)
+- JavaScript 
 
 ## Deployment
 The website is hosted on GitHub Pages / Netlify (choose whichever applies).
