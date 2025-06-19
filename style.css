@@ -141,7 +141,7 @@ p {
   display: flex;
   width: 100vw;
   background: linear-gradient(to right, #4facfe, #00f2fe);
-  padding: 0.1%;
+  padding: 1%;
   font-size: 40px;
   padding-left: 5%;
   color: #000000;
